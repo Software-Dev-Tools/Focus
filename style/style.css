@@ -1,0 +1,85 @@
+body {
+  background-color: #cfcccc;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3) 7%,
+    rgba(128, 128, 128, 0.5) 14%,
+    rgba(255, 255, 255, 0.7) 21%
+  );
+  text-align: center;
+  padding: 20px;
+}
+#container {
+  background-color: white;
+  background-image: linear-gradient(bisque, white, blanchedalmond);
+  width: 300px;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px rgb(140, 140, 140);
+}
+#fuel-gauge {
+  background-color: rgb(192, 191, 191);
+  height: 250px;
+  margin-block: 20px;
+  border-radius: 10px 10px 50px 50px;
+  border: 3px solid aliceblue;
+  position: relative;
+  overflow: hidden;
+}
+#fuel {
+  position: absolute;
+  background-color: rgba(139, 69, 19, 0.5);
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+  transition: height 0.3s;
+}
+#value-display {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  margin-block: 10px;
+}
+button {
+  margin-inline: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+#increase-btn {
+  background-color: green;
+}
+#increase-btn:hover {
+  background-color: rgba(0, 128, 0, 0.504);
+}
+#increase-btn:active {
+  background-color: white;
+  color: green;
+}
+
+#decrease-btn {
+  background-color: red;
+}
+#decrease-btn:hover {
+  background-color: rgba(255, 0, 0, 0.506);
+}
+#decrease-btn:active {
+  background-color: white;
+  color: red;
+}
+#slider {
+  margin-top: 20px;
+}
+#state {
+  margin-block: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
