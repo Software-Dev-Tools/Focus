@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fuel Gauge</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <h1>Fuel Gauge</h1>
+    <div id="container">
+      <div id="fuel-gauge">
+        <div id="fuel"></div>
+      </div>
+      <div id="value-display">50%</div>
+      <div id="controls">
+        <button type="button" id="decrease-btn">Decrease</button>
+        <button type="button" id="increase-btn">Increase</button>
+        <br />
+        <input type="range" id="slider" min="0" step="10" max="100" />
+        <div id="state">Focus Level: Good</div>
+      </div>
+    </div>
+    <script src="/script/main.js"></script>
+  </body>
+</html>
